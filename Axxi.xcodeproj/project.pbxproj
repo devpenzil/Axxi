@@ -11,6 +11,9 @@
 		64C6C2D22BC2F8CA00B529D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6C2D12BC2F8CA00B529D1 /* ContentView.swift */; };
 		64C6C2D42BC2F8CD00B529D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C6C2D32BC2F8CD00B529D1 /* Assets.xcassets */; };
 		64C6C2D72BC2F8CD00B529D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C6C2D62BC2F8CD00B529D1 /* Preview Assets.xcassets */; };
+		64C6C2DF2BC30C7E00B529D1 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6C2DE2BC30C7E00B529D1 /* Header.swift */; };
+		64C6C2E22BC311ED00B529D1 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6C2E12BC311ED00B529D1 /* Temp.swift */; };
+		64C6C2E42BC3152E00B529D1 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6C2E32BC3152E00B529D1 /* Forecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		64C6C2D12BC2F8CA00B529D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64C6C2D32BC2F8CD00B529D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C6C2D62BC2F8CD00B529D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64C6C2DE2BC30C7E00B529D1 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		64C6C2E12BC311ED00B529D1 /* Temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		64C6C2E32BC3152E00B529D1 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		64C6C2CE2BC2F8CA00B529D1 /* Axxi */ = {
 			isa = PBXGroup;
 			children = (
+				64C6C2E02BC3115100B529D1 /* widgets */,
 				64C6C2CF2BC2F8CA00B529D1 /* AxxiApp.swift */,
 				64C6C2D12BC2F8CA00B529D1 /* ContentView.swift */,
 				64C6C2D32BC2F8CD00B529D1 /* Assets.xcassets */,
@@ -65,6 +72,16 @@
 				64C6C2D62BC2F8CD00B529D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64C6C2E02BC3115100B529D1 /* widgets */ = {
+			isa = PBXGroup;
+			children = (
+				64C6C2DE2BC30C7E00B529D1 /* Header.swift */,
+				64C6C2E12BC311ED00B529D1 /* Temp.swift */,
+				64C6C2E32BC3152E00B529D1 /* Forecast.swift */,
+			);
+			path = widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				64C6C2D22BC2F8CA00B529D1 /* ContentView.swift in Sources */,
+				64C6C2DF2BC30C7E00B529D1 /* Header.swift in Sources */,
 				64C6C2D02BC2F8CA00B529D1 /* AxxiApp.swift in Sources */,
+				64C6C2E22BC311ED00B529D1 /* Temp.swift in Sources */,
+				64C6C2E42BC3152E00B529D1 /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +292,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Axxi/Preview Content\"";
+				DEVELOPMENT_TEAM = HT8B2263FK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -284,11 +305,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.axxi.Axxi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Axxi/Preview Content\"";
+				DEVELOPMENT_TEAM = HT8B2263FK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -312,11 +338,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.axxi.Axxi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

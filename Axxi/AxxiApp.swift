@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 @main
 struct AxxiApp: App {
     var body: some Scene {
